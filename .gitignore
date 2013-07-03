@@ -1,0 +1,8 @@
+.idea
+dist/
+.DS_Store
+
+# ignore all bower based downloads
+bower_components/
+# ignore all npm based downloads
+node_modules/

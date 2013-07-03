@@ -1,0 +1,11 @@
+{
+  "version": "0.0.0",
+  "name": "ngluemap-global-components",
+  "dependencies": {
+    "angular": "bower_components/angular/angular.js",
+    "angular-mocks": "bower_components/angular-mocks/angular-mocks.js"
+  },
+  "less": {
+    "base" : "../style/base.less"
+  }
+}
