@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('mapModule')
-  .controller('MeetingDetailSmallCtrl', ['$scope', function ($scope) {
+angular.module('meetingsApp')
+  .controller('MeetingDetailSmallController', ['$scope', function ($scope) {
     if (angular.isDefined($scope.currentMeeting)) {
       $scope.meeting = $scope.currentMeeting;
     }

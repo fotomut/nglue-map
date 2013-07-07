@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('meetingsApp', ['filterModule', 'mapModule'])
+angular.module('meetingsApp', ['filterModule', 'mapModule', 'pagedListModule'])
   .run(['$rootScope', function($rootScope) {
     $rootScope.safeApply = function(fn) {
       var phase = this.$root.$$phase;

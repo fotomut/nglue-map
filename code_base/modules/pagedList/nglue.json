@@ -1,0 +1,19 @@
+{
+  "version": "0.0.2",
+  "name": "pagedlist-module",
+  "dependencies": {
+  },
+  "less": {
+  },
+  "sass": {
+  },
+  "css": {
+    "pagedList": "assets/styles/pagedList.css"
+  },
+  "copy": {
+    "images": "assets/images"
+  },
+  "scripts": {
+    "scripts": "scripts/**/*.js"
+  }
+}

@@ -7,7 +7,6 @@
     "angular-ui.showhide": "bower_components/angular-ui-utils/modules/showhide/showhide.js",
     "angular-ui.event": "bower_components/angular-ui-utils/modules/event/event.js",
     "angular-ui.map": "bower_components/angular-ui-map/src/map.js"
-
   },
   "less": {
     "base" : "../styles/base.less"

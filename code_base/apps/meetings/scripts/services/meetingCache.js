@@ -164,7 +164,7 @@ angular.module('meetingsApp')
         console.log('getMeetingsFromCache - '+ callingFuncName + ' and isDirty='+isDirty+' and isDefined(searchBounds)='+angular.isDefined(searchBounds)); // optional arg used for logging to determine where call originated
 
         var deferred = $q.defer();
-        
+
         if (isDirty && angular.isDefined(searchBounds)) {
           isWaitingForData = true;
           meetingServer.getMeetingsFromServer(searchBounds)

@@ -5,7 +5,8 @@
   },
   "nglue-dependencies": {
     "map": "map",
-    "filter": "filter"
+    "filter": "filter",
+    "pagedList": "pagedList"
   },
   "less": {
   }

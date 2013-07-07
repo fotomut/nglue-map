@@ -1,0 +1,37 @@
+div.meeting_results {
+  display: inline-block; }
+div.meeting_results div.meeting_result {
+  width: 100%;
+  max-width: 500px;
+  border-bottom: 1px solid gray;
+  margin: 2px 0 0 0;
+  padding: 3.5px; }
+div.meeting_results div.meeting_result div#meeting_info {
+  width: 72%;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 5px 0 0 5px;
+  display: inline-block !important;
+  text-transform: capitalize; }
+div.meeting_results div.meeting_result button.directions {
+  letter-spacing: auto;
+  font-size: 0.9em !important;
+  position: relative;
+  background: white;
+  border: none; }
+div.meeting_results div.meeting_result p .city_state {
+  opacity: 0.8; }
+div.meeting_results div.meeting_result p .address {
+  opacity: 0.8; }
+div.meeting_results div.meeting_result p .type {
+  opacity: 0.6; }
+div.meeting_results div.meeting_result div#info {
+  width: 25%;
+  text-align: center;
+  display: inline-block !important;
+  vertical-align: top;
+  font-weight: bold; }
+div.meeting_results div.meeting_result span.day {
+  text-transform: uppercase; }
+div.meeting_results div.meeting_result span.distance {
+  font-weight: normal; }

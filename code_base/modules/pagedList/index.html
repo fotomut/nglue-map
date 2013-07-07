@@ -1,0 +1,33 @@
+<!doctype html>
+<html ng-app="pagedListModule">
+<head>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <title>pagedListModule</title>
+
+  <link rel="stylesheet" href="../../assets/styles/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/styles/bootstrap/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="../../assets/styles/base.css">
+  <link rel="stylesheet" href="../../assets/styles/meeting-detail.css">
+  <link type="text/css" href="assets/styles/pagedList.css">
+</head>
+
+<body>
+<!-- src global libraries here-->
+<!-- Angular libs -->
+<script src="../../assets/bower_components/angular/angular.js"></script>
+
+
+<!-- implement -->
+
+<!-- module's Angular.js controllers, directives, etc. -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/pagedListModule.js"></script>
+<script src="scripts/filters/startFrom.js"></script>
+
+<script src="pagedListModuleInterface.js"></script>
+
+<!-- components partial -->
+<div ng-include src="'assets/views/pagedListModule.html'"></div>
+
+</body>
+</html>
