@@ -1,0 +1,20 @@
+.map {
+  min-height: 420px;
+  height: 576px;
+  position: relative;
+  display: block;
+}
+
+#map_canvas img {
+  max-width: none;
+}
+
+.row-fluid .span8 {
+  width: 67.9197;
+}
+
+/* mobile no displays */
+h1.mobile {
+  display: none; }
+
+

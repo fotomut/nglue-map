@@ -1,0 +1,41 @@
+<!doctype html>
+<html ng-app="meetingsApp">
+<head>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <title>meetingsApp</title>
+
+  <link rel="stylesheet" href="../../dist/assets/styles/ngluemap-global-components-latest.css">
+  <link rel="stylesheet" href="assets/styles/meetings-app-latest.css">
+
+</head>
+
+<!-- libs -->
+<!-- implement -->
+
+<!-- global and component specific -->
+<script src="../../dist/assets/components/ngluemap-global-components-latest.min.js"></script>
+<script src="../../dist/assets/components/meetings-app-modules-latest.min.js"></script>
+<script src="../../dist/assets/components/meetings-app-latest.min.js"></script>
+
+<!-- module's Angular.js controllers, directives, etc. -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/meetingsApp.js"></script>
+<script src="scripts/services/eventService.js"></script>
+<script src="scripts/services/meetingCache.js"></script>
+<script src="scripts/services/meetingServer.js"></script>
+<script src="scripts/services/distanceMath.js"></script>
+<script src="scripts/services/timeInterval.js"></script>
+<script src="scripts/services/googleGeocoder.js"></script>
+<script src="scripts/services/geolocation.js"></script>
+
+<script src="scripts/interfaces/mapModuleInterface.js"></script>
+<script src="scripts/interfaces/filterModuleInterface.js"></script>
+
+<!-- Google Maps API v3 -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClnhLx_M6333eloZUa9Mn9uPCtPq82Cpk&sensor=true"></script>
+
+<!-- components partial -->
+<div ng-include src="'assets/views/meetingsApp.html'"></div>
+
+</body>
+</html>

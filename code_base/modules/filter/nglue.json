@@ -1,0 +1,15 @@
+{
+  "version": "0.0.0",
+  "name": "filter-module",
+  "dependencies": {
+  },
+  "css": {
+    "filter": "assets/styles/filter.css"
+  },
+  "copy": {
+    "images": "assets/images"
+  },
+  "scripts": {
+    "scripts": "scripts/**/*.js"
+  }
+}

@@ -1,11 +1,23 @@
 {
-  "version": "0.0.0",
+  "version": "0.0.1",
   "name": "ngluemap-global-components",
   "dependencies": {
     "angular": "bower_components/angular/angular.js",
-    "angular-mocks": "bower_components/angular-mocks/angular-mocks.js"
+    "angular-mocks": "bower_components/angular-mocks/angular-mocks.js",
+    "angular-ui.showhide": "bower_components/angular-ui-utils/modules/showhide/showhide.js",
+    "angular-ui.event": "bower_components/angular-ui-utils/modules/event/event.js",
+    "angular-ui.map": "bower_components/angular-ui-map/src/map.js"
+
   },
   "less": {
-    "base" : "../style/base.less"
+    "base" : "../styles/base.less"
+  },
+  "sass": {
+  },
+  "css": {
+    "bootstrap": "../styles/bootstrap/bootstrap.min.css",
+    "bootstrap-responsive": "../styles/bootstrap/bootstrap-responsive.min.css",
+    "base": "../styles/base.css",
+    "meeting-detail": "../styles/meeting-detail.css"
   }
 }

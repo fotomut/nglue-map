@@ -1,0 +1,20 @@
+{
+  "version": "0.0.0",
+  "name": "map-module",
+  "dependencies": {
+  },
+  "less": {
+  },
+  "sass": {
+  },
+  "css": {
+    "map": "assets/styles/map.css"
+  },
+  "copy": {
+    "mapStyle": "assets/styles/mapStyle.json",
+    "images": "assets/images"
+  },
+  "scripts": {
+    "scripts": "scripts/**/*.js"
+  }
+}

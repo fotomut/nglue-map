@@ -37,7 +37,7 @@ Here's the default initial file you are given when you initialize the generator;
     "angular-mocks": "bower_components/angular-mocks/angular-mocks.js"
   },
   "less": {
-    "base" : "../style/base.less"
+    "base" : "../styles/base.less"
   },
   "copy": {
     "src": "assets/images"
@@ -48,8 +48,8 @@ Here's the default initial file you are given when you initialize the generator;
 Once you run `grunt` the compiled js and css files will be published to `code_base/dist/`.  It uses the `config.js > name` and `version` to generate the names as follow;
 
 <pre>
-style/ngluemap-global-components-0.0.0.css
-style/ngluemap-global-components-latest.css
+styles/ngluemap-global-components-0.0.0.css
+styles/ngluemap-global-components-latest.css
 js/ngluemap-global-components-0.0.0.min.js
 js/ngluemap-global-components-latest.min.js
 </pre>

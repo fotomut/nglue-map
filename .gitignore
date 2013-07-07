@@ -6,3 +6,4 @@ dist/
 bower_components/
 # ignore all npm based downloads
 node_modules/
+.sass-cache

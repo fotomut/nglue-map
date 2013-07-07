@@ -1,0 +1,35 @@
+<!doctype html>
+<html ng-app="filterModule">
+<head>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <title>filterModule</title>
+
+  <link rel="stylesheet" href="../../assets/styles/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="../../assets/styles/bootstrap/bootstrap-responsive.css">
+  <link rel="stylesheet" href="../../assets/styles/base.css">
+  <link rel="stylesheet" href="assets/styles/filter.css">
+
+</head>
+
+<body>
+<!-- libs -->
+<!-- Angular-->
+<script src="../../dist/assets/components/ngluemap-global-components-latest.min.js"></script>
+<!--<script src="../../assets/bower_components/angular/angular.js"></script>-->
+<!-- Angular-UI modules needed: doing this piecemeal to minimize script size -->
+<!--<script src="../../assets/bower_components/angular-ui-utils/modules/showhide/showhide.js"></script>-->
+
+<!-- implement -->
+
+<!-- module's Angular.js controllers, directives, etc. -->
+<script src="interface.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/filterModule.js"></script>
+<script src="scripts/services/filter.js"></script>
+<script src="scripts/directives/orFilter.js"></script>
+
+<!-- components partial -->
+<div ng-include src="'assets/views/filterModule.html'" ng-controller="FilterModuleController"></div>
+
+</body>
+</html>

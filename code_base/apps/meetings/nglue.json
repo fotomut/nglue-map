@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "name": "meetings-app",
+  "dependencies": {
+  },
+  "nglue-dependencies": {
+    "map": "map",
+    "filter": "filter"
+  },
+  "less": {
+  }
+}

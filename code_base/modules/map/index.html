@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app="mapModule">
+<head>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <title>mapModule</title>
+
+  <link rel="stylesheet" href="../../assets/styles/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/styles/bootstrap/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="../../assets/styles/base.css">
+  <link rel="stylesheet" href="../../assets/styles/meeting-detail.css">
+  <link rel="stylesheet" href="assets/styles/map.css">
+
+</head>
+
+<body>
+<!-- src global libraries here-->
+<!-- Angular libs -->
+<script src="../../assets/bower_components/angular/angular.js"></script>
+<!-- Angular-UI modules needed: doing this piecemeal to minimize script size -->
+<script src="../../assets/bower_components/angular-ui-map/src/map.js"></script>
+<script src="../../assets/bower_components/angular-ui-utils/modules/event/event.js"></script>
+
+<!-- Google Maps API v3 -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClnhLx_M6333eloZUa9Mn9uPCtPq82Cpk&sensor=true"></script>
+
+
+<!-- module's Angular.js controllers, directives, etc. -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/mapModule.js"></script>
+<script src="scripts/controllers/meetingDetailSmall.js"></script>
+
+<script src="interface.js"></script>
+
+
+<!-- components partial -->
+<div ng-include src="'assets/views/mapModule.html'" ng-controller="MapModuleController"></div>
+
+</body>
+</html>
