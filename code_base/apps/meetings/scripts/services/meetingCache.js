@@ -161,13 +161,13 @@ angular.module('meetingsApp')
       },
       getMeetingsFromCache: function(callingFuncName) {
         // bb is the bounding box of type google.maps.LatLngBounds
-        console.log('getMeetingsFromCache - '+ callingFuncName + ' and isDirty='+isDirty+' and isDefined(searchBounds)='+angular.isDefined(searchBounds)); // optional arg used for logging to determine where call originated
+        console.log('>>> meetingCache.getMeetingsFromCache - '+ callingFuncName + ' and isDirty='+isDirty+' and isDefined(searchBounds)='+angular.isDefined(searchBounds)); // optional arg used for logging to determine where call originated
 
         var deferred = $q.defer();
 
-        if (isDirty && angular.isDefined(searchBounds)) {
+        if (isDirty && angular.isDefined(searchBounds) && !isWaitingForData) {
           isWaitingForData = true;
-          meetingServer.getMeetingsFromServer(searchBounds)
+          meetingServer.getMeetingsFromServer(searchBounds, callingFuncName)
             .then(function(meetings) {
               processMeetings(meetings);
               isWaitingForData = false;

@@ -29,11 +29,11 @@ angular.module('meetingsApp')
 
     // Public API here
     return {
-      getMeetingsFromServer: function(bb) {
+      getMeetingsFromServer: function(bb, callingFuncName) {
         // TODO: HIGH: this is making multiple calls to the server, but working for now
         // Retrieves meeting objects from server based on current filters
         // bb is the bounding box of type google.maps.LatLngBounds
-        console.log('entering getMeetingsFromServer');
+        console.log('<<<***>>> meetingServer.getMeetingsFromServer - '+ callingFuncName); // optional arg used for logging to determine where call originated
 
         var deferred = $q.defer();
         // populate meetings from server

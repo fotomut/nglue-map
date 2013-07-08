@@ -64,21 +64,24 @@ angular.module('mapModule')
       });
     };
 
+    var waitingForMapBounds = false;
+
     var setMapCenter = function() {
       if (angular.isDefined(mapModuleInterface.getCurrentLocationLatLng())) {
+        waitingForMapBounds = true;
         $scope.map.setCenter(mapModuleInterface.getCurrentLocationLatLng());
         setCurrentLocationMarker(mapModuleInterface.getCurrentLocationLatLng());
-        loadMarkerData();
       }
     };
 
-
-
     $scope.updateMapBounds = function() {
-      console.log('update map bounds');
+//      console.log('update map bounds');
       mapModuleInterface.setMapBounds($scope.map.getBounds());
+      if (waitingForMapBounds) {
+        loadMarkerData();
+        waitingForMapBounds = false;
+      }
     };
-
 
 
     $scope.$watch('map', function() {

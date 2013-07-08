@@ -13,7 +13,7 @@ angular.module('meetingsApp')
         };
 
         geocoder.geocode(request, function(results, status) {
-          $rootScope.$apply(function() {
+          $rootScope.$apply(function() { // use $apply because geocoder is outside of angular
             console.log('geocode response', status, results);
             if (status === google.maps.GeocoderStatus.OK) {
               console.log('geocode1')

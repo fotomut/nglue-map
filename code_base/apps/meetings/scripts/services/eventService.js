@@ -4,10 +4,10 @@ angular.module('meetingsApp')
   .factory('eventService', ['$rootScope', function($rootScope) {
     var serviceAPI = {
       dataCacheRefreshedEvent: 'eventService__dataCacheRefreshed',
-      currentLocationChangedEvent: 'eventService_currentLocationChanged',
-      filterChangedEvent: 'eventService_filterChanged',
-      locationFilterChangedEvent: 'eventService_locationFilterChanged',
-      meetingSearchClickedEvent: 'eventService_meetingSearchClicked'
+      currentLocationChangedEvent: 'eventService__currentLocationChanged',
+      filterChangedEvent: 'eventService__filterChanged',
+      locationFilterChangedEvent: 'eventService__locationFilterChanged',
+      meetingSearchClickedEvent: 'eventService__meetingSearchClicked'
     };
 
     return angular.extend(serviceAPI, {
