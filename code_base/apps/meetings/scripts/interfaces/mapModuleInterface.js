@@ -3,8 +3,7 @@
 angular.module('meetingsApp')
   .factory('mapModuleInterface', ['$rootScope', 'eventService', 'meetingCache', function($rootScope, eventService, meetingCache) {
 
-    var serviceAPI = {
-    };
+    var serviceAPI = {};
 
     serviceAPI = angular.extend(serviceAPI, {
       getDefaultMapOptions: function() {
@@ -33,9 +32,18 @@ angular.module('meetingsApp')
       },
       addListenerToChangeCurrentLocation: function(loadingFunc) {
         eventService.registerRootEventHandler(eventService.currentLocationChangedEvent, loadingFunc);
+      },
+
+      getInfoWindowPartialUrl: function() {
+        return '../../assets/views/meetingDetailSmall.html';
+      },
+      getInfoWindowController: function(scope) {
+        return ['$scope', function($scope) {
+          if (angular.isDefined($scope.currentMeeting)) {
+            $scope.meeting = $scope.currentMeeting;
+          }
+        }];
       }
-
     });
-
     return serviceAPI;
   }]);

@@ -3,9 +3,9 @@
 angular.module('meetingsApp')
   .factory('filterModuleInterface', ['$rootScope', 'eventService', 'googleGeocoder', 'geolocation', function($rootScope, eventService, geocoder, geolocation) {
 
-    var serviceAPI = {
-    };
+    var serviceAPI = {};
 
+    // private api
     var defaultCoordinates = new google.maps.LatLng(40.763562, -73.97140100000001);  // NYC
     var locations = {
       geolocation: {
@@ -48,6 +48,7 @@ angular.module('meetingsApp')
       }
     };
 
+    // public api
     serviceAPI = angular.extend(serviceAPI, {
       searchButtonClicked: function() {
         console.log('app interface: filterModuleInterface.searchButtonClicked()');
@@ -108,6 +109,5 @@ angular.module('meetingsApp')
         eventService.broadcastRootEvent(eventService.locationFilterChangedEvent);
       }
     });
-
     return serviceAPI;
   }]);

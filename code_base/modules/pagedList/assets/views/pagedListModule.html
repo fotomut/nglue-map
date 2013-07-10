@@ -2,7 +2,7 @@
 
     <div class="span4 meeting_results">
       <div ng-repeat="meeting in items | orderBy:distance | startFrom:currentPage*pageSize | limitTo:pageSize">
-        <ng-include src="'../../assets/views/meetingDetailSmall.html'" ng-controller="MeetingDetailSmallController"></ng-include>
+        <ng-include src="partialUrl" ng-controller="partialController"></ng-include>
       </div>
       <div class="pagination" ng-hide="numberOfPages() <= 0">
         <button class="previous" ng-disabled="currentPage <= 0" ng-click="currentPage=currentPage-1">

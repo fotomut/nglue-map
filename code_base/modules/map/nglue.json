@@ -3,10 +3,6 @@
   "name": "map-module",
   "dependencies": {
   },
-  "less": {
-  },
-  "sass": {
-  },
   "css": {
     "map": "assets/styles/map.css"
   },

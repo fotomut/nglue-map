@@ -8,6 +8,8 @@ angular.module('mapModule')
 //    $rootScope.useMobileHeaderFooter = browserDetection.isMobile();
 
 
+    $scope.infoWindowPartialUrl = mapModuleInterface.getInfoWindowPartialUrl();
+    $scope.infoWindowController = mapModuleInterface.getInfoWindowController();
 
     $scope.meetings = [];
     var loadMarkerData = function() {

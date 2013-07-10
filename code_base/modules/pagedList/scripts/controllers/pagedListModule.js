@@ -3,6 +3,9 @@
 angular.module('pagedListModule')
   .controller('PagedListModuleController', ['$scope', 'pagedListModuleInterface', function ($scope, pagedListModuleInterface) {
 
+    $scope.partialUrl = pagedListModuleInterface.getPartialUrl();
+    $scope.partialController = pagedListModuleInterface.getPartialController();
+
     $scope.items = [];
     var loadItems = function() {
       $scope.items = pagedListModuleInterface.getItems('PagedListModuleController.loadItems');

@@ -178,7 +178,7 @@ angular.module('meetingsApp')
 
         // TODO: need promises here.  for now, returns the old cachedMeetings and use broadcast to make change
         return filterService.filter(cachedMeetings);
-        // return: array of meeting objects from server
+        // return: array of meeting objects from server, filtered and processed
       },
       getCurrentLocationLatLng: function() {
         return filterModuleInterface.getCurrentLocationLatLng();
